@@ -1,0 +1,14 @@
+Launch the Empty World:
+roslaunch turtlebot3_gazebo turtlebot3_emptyworld.launch
+
+Spawn the SDF Model:
+rosrun gazebo_ros spawn_model -file ~<=PATH TO THE MODEL.SDF=>/model.sdf -sdf -x 3 -y -4 -model task_area
+
+Start the RVIZ:
+roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=/<=PATH TO THE MAP IN MAPS FOLDER=>/map.yaml
+
+Publish the Goals:
+roslaunch goal_publisher goal_publisher.launch
+
+Launch the Task:
+roslaunch exercise1 exercise1.launch
