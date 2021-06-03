@@ -1,8 +1,15 @@
 # Exercise1
 Task assigned by Neobotix
-Step 1: Downloaded the SDF files from the sources.
-Step 2: Launched the Gazebo Empty world with TurtleBot3 and spawned the model.
-Step3: Created the map using Rviz Gmapping.
+
+
+## Step 1
+Downloaded the SDF files from the sources.
+
+## Step 2
+Launched the Gazebo Empty world with TurtleBot3 and spawned the model.
+
+## Step3
+Created the map using Rviz Gmapping.
 
 $ roslaunch turtlebot3_slam turtlebot3_slam.launch slam_methods:=gmapping
 
@@ -17,11 +24,13 @@ $ rosrun map_server map_saver -f ~/map
 (Saving the created map as yaml file)
 
 
-Step 4: Created Goal Publisher Package to publish the goals.
+## Step 4
+Created Goal Publisher Package to publish the goals.
 
-Step 5: Developed the code to send subscribed goal to move base.
+## Step 5
+Developed the code to send subscribed goal to move base.
 
-Operational Commands:
+### Operational Commands:
 
 Launch the Empty World: $ roslaunch turtlebot3_gazebo turtlebot3_emptyworld.launch
 
